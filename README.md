@@ -5,7 +5,8 @@ This project is a frontend implementation of a Trello-like application with drag
 ## Features
 
 - ![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/83b5843f-4484-4b1a-a333-6a132abec1fe)
-- Create boards, lists, and cards.
+- Create boards, lists, and cards.![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/30e3cdf8-c4e7-4c5b-bb2c-2afcb4112775)
+
 - Drag and drop cards between lists.
 - Intuitive user interface similar to Trello.
 - Responsive design for various screen sizes.
