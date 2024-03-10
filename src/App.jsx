@@ -48,7 +48,7 @@ function App() {
 
     if (taskIndex !== -1) {
       const updatedTask = { ...newData.statuses[statusIndex].tasks[taskIndex] }; // Create a copy
-      console.log(newData.statuses[statusIndex].tasks[taskIndex])
+      // console.log(newData.statuses[statusIndex].tasks[taskIndex])
       updatedTask.name = newName;
       updatedTask.description = newDescription;
   

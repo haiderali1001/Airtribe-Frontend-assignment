@@ -34,6 +34,8 @@ const Board = ({ data, addTask, removeTask, updateTask, moveTask, addStatus, rem
             removeTask={removeTask}
             updateTask={updateTask}
             removeStatus={removeStatus}
+            statuses={data.statuses}
+            moveTask={moveTask}
           />
         ))}
       </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Task from './Task';
 import { Droppable } from 'react-beautiful-dnd';
 
-const Status = ({ status, addTask, removeTask, updateTask, removeStatus }) => {
+const Status = ({ status, addTask, removeTask, updateTask, removeStatus, statuses, moveTask }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [taskName, setTaskName] = useState('');
   const [taskDescription, setTaskDescription] = useState('');
@@ -47,6 +47,8 @@ const Status = ({ status, addTask, removeTask, updateTask, removeStatus }) => {
                 statusId={status.id}
                 removeTask={removeTask}
                 updateTask={updateTask}
+                moveTask={moveTask}
+                statuses={statuses}
               />
             ))}
             {provided.placeholder}

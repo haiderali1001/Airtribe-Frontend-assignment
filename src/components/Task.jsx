@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 
-const Task = ({task,index, statusId,removeTask,updateTask,}) => {
+const Task = ({ task, index, statusId, removeTask, updateTask, moveTask, statuses }) => {
   const [isEditingWindow, setIsEditingWindow] = useState(false);
   const [taskName, setTaskName] = useState(task.name);
   const [taskDescription, setTaskDescription] = useState(task.description);
+  const [selectedStatusId, setSelectedStatusId] = useState(statusId);
   const editWindowRef = useRef(null);
 
   const handleShowEditWindow = () => {
@@ -15,13 +16,21 @@ const Task = ({task,index, statusId,removeTask,updateTask,}) => {
     setIsEditingWindow(false);
     setTaskName(task.name);
     setTaskDescription(task.description);
+    setSelectedStatusId(statusId);
   };
 
-  const handleUpdateTask = () => {
+  const handleSaveTask = () => {
     if (taskName.trim() === '') {
       return;
     }
     updateTask(statusId, task.id, taskName, taskDescription);
+
+    if (selectedStatusId !== statusId) {
+      const destinationStatusId = parseInt(selectedStatusId);
+      const destinationIndex = 0; // Move to the beginning of the new status
+      moveTask(statusId, destinationStatusId, task.id, destinationIndex);
+    }
+
     handleCloseEditWindow();
   };
 
@@ -56,6 +65,7 @@ const Task = ({task,index, statusId,removeTask,updateTask,}) => {
             if (!isEditingWindow) {
               setTaskName(task.name);
               setTaskDescription(task.description);
+              setSelectedStatusId(statusId);
               handleShowEditWindow();
             }
           }}
@@ -74,8 +84,22 @@ const Task = ({task,index, statusId,removeTask,updateTask,}) => {
                 onChange={(e) => setTaskDescription(e.target.value)}
                 placeholder="Task Description"
               />
+              <div style={{ display: "flex", gap: "5px" }}>
+                <label htmlFor="status-dropdown">Move to Status: </label>
+                <select
+                  id="status-dropdown"
+                  value={selectedStatusId}
+                  onChange={(e) => setSelectedStatusId(e.target.value)}
+                >
+                  {statuses.map((status) => (
+                    <option key={status.id} value={status.id}>
+                      {status.title}
+                    </option>
+                  ))}
+                </select>
+              </div>
               <div className="edit-window-actions">
-                <button onClick={handleUpdateTask}>Save</button>
+                <button onClick={handleSaveTask}>Save</button>
                 <button onClick={handleDeleteTask}>Delete</button>
                 <button onClick={handleCloseEditWindow}>Cancel</button>
               </div>
