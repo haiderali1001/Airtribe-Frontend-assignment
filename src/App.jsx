@@ -94,6 +94,8 @@ function App() {
   }
 
   return (
+    <>
+    <div className="app-header"><h1>Trello Clone for Airtribe</h1></div>
     <div className="App">
       <Board
         data={data}
@@ -106,6 +108,7 @@ function App() {
         clearBoard={clearBoard}
       />
     </div>
+    </>
   );
 }
 
