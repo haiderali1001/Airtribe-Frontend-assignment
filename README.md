@@ -19,20 +19,19 @@ This project is a frontend implementation of a Trello-like application with drag
 
 ## Getting Started
 
--To get a local copy of the project up and running, follow these steps:
+### To get a local copy of the project up and running, follow these steps:
 
--1. Clone this repository to your local machine:
-    ```bash
-    git clone https://github.com/haiderali1001/Airtribe-Frontend-assignment.git
-    cd Airtribe-Frontend-assignment
+### 1. Clone this repository to your local machine:
+    - git clone https://github.com/haiderali1001/Airtribe-Frontend-assignment.git
+    - cd Airtribe-Frontend-assignment
 
--2. Start the development server:
+### 2. Start the development server:
    Using npm:
-    Copy code
-    npm install
-    npm run dev
+    -Copy code
+    -npm install
+    -npm run dev
 
--3. Open your web browser and navigate to http://localhost:5173 to view the application.
+### 3. Open your web browser and navigate to http://localhost:5173 to view the application.
 
 ## How to Use
 
