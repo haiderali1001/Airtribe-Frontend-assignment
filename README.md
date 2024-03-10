@@ -4,6 +4,7 @@ This project is a frontend implementation of a Trello-like application with drag
 
 ## Features
 
+- ![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/83b5843f-4484-4b1a-a333-6a132abec1fe)
 - Create boards, lists, and cards.
 - Drag and drop cards between lists.
 - Intuitive user interface similar to Trello.
@@ -17,6 +18,8 @@ This project is a frontend implementation of a Trello-like application with drag
 - HTML5: Markup language for structuring and presenting content on the web.
 - CSS3: Style sheet language for adding style and layout to web documents.
 - JavaScript: Programming language for adding interactivity to web pages.
+
+
 
 ## Getting Started
 
