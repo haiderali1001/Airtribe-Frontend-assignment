@@ -34,9 +34,8 @@ This project is a frontend implementation of a Trello-like application with drag
 
 ## How to Use
 
-- Create a new board by clicking on the "+" button.
-- Add lists to the board by clicking on "Add List" button.
-- Add cards to lists by clicking on "Add Card" button.
+- Add lists to the board by clicking on "Add Status" button.
+- Add cards to lists by clicking on "+ New" button.
 - Drag and drop cards between lists to rearrange them.
 - Enjoy a seamless Trello-like experience!
 
