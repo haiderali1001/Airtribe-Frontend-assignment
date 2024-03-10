@@ -26,7 +26,6 @@ This project is a frontend implementation of a Trello-like application with drag
     - cd Airtribe-Frontend-assignment
 
 ### 2. Start the development server:
-   Using npm:
     -Copy code
     -npm install
     -npm run dev
