@@ -11,7 +11,7 @@ This project is a frontend implementation of a Trello-like application with drag
 - Responsive design for various screen sizes.
   <br>![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/13d76673-bbba-4941-aac3-1e689055dd5f)
 - Edit your Cards![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/1e484097-6f3b-400b-929c-23e80682a6c9)
-
+- Delete a Particular task, Status or the entire board.
 - Uses local storage to fetch and save the tasks and statuses created by user.
 
 ## Technologies Used
