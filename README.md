@@ -8,6 +8,7 @@ This project is a frontend implementation of a Trello-like application with drag
 - Drag and drop cards between lists.
 - Intuitive user interface similar to Trello.
 - Responsive design for various screen sizes.
+- Uses local storage to fetch and save the tasks and statuses created by user.
 
 ## Technologies Used
 
