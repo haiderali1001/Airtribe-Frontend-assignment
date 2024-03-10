@@ -8,7 +8,8 @@ This project is a frontend implementation of a Trello-like application with drag
 - Create boards, lists, and cards.![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/30e3cdf8-c4e7-4c5b-bb2c-2afcb4112775)
 - Drag and drop or reorder cards between lists.![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/b76d6f99-ea97-4ea4-aedd-e7918bf02136)![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/028d3efe-9e19-4d63-95ea-340dcd1fc7de)
 - Intuitive user interface similar to Trello.
-- Responsive design for various screen sizes.![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/13d76673-bbba-4941-aac3-1e689055dd5f)
+- Responsive design for various screen sizes.
+- ![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/13d76673-bbba-4941-aac3-1e689055dd5f)
 - Edit your Cards![image](https://github.com/haiderali1001/Airtribe-Frontend-assignment/assets/69786061/1e484097-6f3b-400b-929c-23e80682a6c9)
 
 - Uses local storage to fetch and save the tasks and statuses created by user.
